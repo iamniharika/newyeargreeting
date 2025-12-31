@@ -67,18 +67,18 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
     // Party popper burst on load
-    const duration = 7 * 1000;
+    const duration = 4 * 1000;
     const end = Date.now() + duration;
 
     (function frame() {
       confetti({
-        particleCount: 8,
+        particleCount: 4,
         angle: 60,
         spread: 60,
         origin: { x: 0 }
       });
       confetti({
-        particleCount: 8,
+        particleCount: 4,
         angle: 120,
         spread: 60,
         origin: { x: 1 }
