@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year 2026 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #042aff, #ff0303 , #19ff04 );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(41, 39, 39, 0.993);
+      padding: 30px 25px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 0 25px rgba(27, 9, 196, 0.5);
+      animation: popIn 1s ease-out;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    small {
+      opacity: 0.8;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Happy New Year 2026 🎉</h1>
+    <p>
+        A new year is deploying quietly,<br>
+        carrying dreams in every build 🚀<br><br>
+        May life run stable,<br>
+        and happiness never timeout ✨
+
+
+    </p>
+    <p><strong>– Warm wishes from Niharika Nagpal</strong></p>
+  </div>
+
+  <!-- 🎊 Confetti / Party Popper Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // Party popper burst on load
+    const duration = 7 * 1000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+        particleCount: 8,
+        angle: 60,
+        spread: 60,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 8,
+        angle: 120,
+        spread: 60,
+        origin: { x: 1 }
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    })();
+  </script>
+
+</body>
+</html>
